@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: aqua;
+      }
+      .header img {
+        vertical-align: middle;
+      }
+      .header h1 {
+        display: inline-block;
+        margin: 0;
+        font-size: 24px;
+        color: black;
+      }
+      .title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      form {
+        font-size: 14px;
+        background-color: aqua;
+      }
+      .row {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .row label {
+        width: 120px;
+        font-weight: bold;
+      }
+      .row input[type="text"],
+      .row select {
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .radio-group,
+      .checkbox-group {
+        margin-left: 120px;
+        margin-bottom: 10px;
+      }
+      .radio-group input,
+      .checkbox-group input {
+        margin-right: 5px;
+      }
+      textarea {
+        width: calc(100% - 130px);
+        height: 100px;
+        margin-left: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .buttons input {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+      .buttons input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+      }
+      .buttons input[type="reset"] {
+        background-color: #f44336;
+        color: white;
+      }
+      hr {
+        border: 1px solid #ccc;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="" alt="Logo" width="50" />
+        <h1>Jackson Electronics</h1>
+      </div>
+      <h2 class="title">Registration Form</h2>
+      <form>
+        <p style="text-align: center">
+          Register your Jackson Electronics product here
+        </p>
+        <div class="row">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" />
+          <label for="lastname" style="margin-left: 10px">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div class="row">
+          <label for="address1">Address #1:</label>
+          <input type="text" id="address1" name="address1" />
+        </div>
+        <div class="row">
+          <label for="address2">Address #2:</label>
+          <input type="text" id="address2" name="address2" />
+        </div>
+        <div class="row">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" />
+          <label for="state" style="margin-left: 10px">State:</label>
+          <input type="text" id="state" name="state" style="width: 50px" />
+          <label for="zip" style="margin-left: 10px">Zip:</label>
+          <input type="text" id="zip" name="zip" style="width: 60px" />
+        </div>
+        <div class="row">
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="canada">Canada</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <hr />
+        <div class="row">
+          <label for="product">Product:</label>
+          <select id="product" name="product">
+            <option value="scanmaster">ScanMaster</option>
+            <option value="printer">Printer</option>
+            <option value="monitor">Monitor</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="date">Date Purchased:</label>
+          <input type="text" id="date" name="date" />
+        </div>
+        <div class="row">
+          <label for="serial">Serial #:</label>
+          <input type="text" id="serial" name="serial" />
+        </div>
+        <div class="radio-group">
+          <label>Used for:</label><br />
+          <input type="radio" id="home" name="usage" value="home" />
+          <label for="home">Home</label>
+          <input type="radio" id="business" name="usage" value="business" />
+          <label for="business">Business</label>
+          <input type="radio" id="government" name="usage" value="government" />
+          <label for="government">Government</label>
+          <input type="radio" id="education" name="usage" value="education" />
+          <label for="education">Educational Institution</label>
+          <input type="radio" id="other" name="usage" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="checkbox-group"></div>
+      </form>
+    </div>
+  </body>
+</html>
